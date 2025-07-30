@@ -1,52 +1,26 @@
-# Python Flask による Web アプリ開発入門
-## Git Clone
+# プロジェクト名
 
-```
-$ git clone https://github.com/ml-flaskbook/flaskbook.git
-```
+なんか小さくてかわいいやつ判別
 
-## 第2部から読み始める場合
+## 概要
 
-下記コマンドで第1部までの状態に切り替えられます。
+このアプリケーションは、教科書の flask 機械学習を参考にモデルを作り**[#ちいかわ#その他を判断するシステム]** です。
 
-```
-$ git checkout -b part1 tags/part1
-```
+## 主な機能
 
-## 仮想環境を作成する
+- 画像の閲覧
+- 画像の判別(#ちいかわ or #その他)
+- 画像の投稿(ログイン時のみ)
+- 画像の削除
+- ログイン機能
 
-### Mac/Linux
+- アカウントの作成
+- タグの検索
 
-```
-$ python3 -m venv venv
-$ source venv/bin/activate
-```
+## 画面イメージ
 
-### Widows（PowerShell）
+![alt text](image.png)
 
-スクリプトを実行するために、Windows PowerShellで次のコマンドを実行し、実行ポリシーを変更する。
+## 起動
 
-```
-> PowerShell Set-ExecutionPolicy RemoteSigned CurrentUser
-```
-
-ポリシーを変更したら、次のコマンドを実行する
-
-```
-> py -m venv venv
-> venv\Scripts\Activate.ps1
-```
-
-## パッケージインストール
-
-```
-$ pip install -r requirements.txt
-```
-
-## DBマイグレート
-
-```
-(venv) $ flask db init
-(venv) $ flask db migrate
-(venv) $ flask db upgrade
-```
+flask run
