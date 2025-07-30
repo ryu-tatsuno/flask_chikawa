@@ -19,7 +19,7 @@
 
 ## 画面イメージ
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## 起動
 
